@@ -44,7 +44,7 @@ function disableGame() {
     button.disabled = true;
     setTimeout(() => {
         document.querySelector('.alert').remove();
-        showAlert('reset the game if you want to play again', 'notice')
+        showAlert('Restart the game if you want to play again', 'notice')
         resetBtn.style.display = "block";
         button.style.display = "none";
     },3000)
