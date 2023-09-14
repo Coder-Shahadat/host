@@ -14,7 +14,6 @@ resetBtn.addEventListener('click', restart);
 
 // function declaration 
 function checker() {
-    console.log(num);
     let inp = parseInt(input.value);
     if (document.querySelector('.alert') !== null) document.querySelector('.alert').remove();
     if (isNaN(inp)||inp<1||inp>10) {
