@@ -22,18 +22,18 @@ function checker() {
     }
     else {
         if (tried == 3) {
-            showAlert('Game Over!You lose the Game!', 'loss',tried)
+            showAlert('You lose!', 'lose',tried)
             disableGame();
         }
         else if (inp === num) {
-            showAlert('You won the game!','win',tried);
+            showAlert('You Win','win',tried);
             disableGame();
         }
         else if (inp > num) {
-            showAlert('Think a little bit smaller number','notice',tried);
+            showAlert('Correct answer is smaller!','notice',tried);
         }
         else {
-            showAlert('Think a litter bit greater number','notice',tried);
+            showAlert('Correct answer is greater!','notice',tried);
         }
         tried++;
     }
